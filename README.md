@@ -1,9 +1,10 @@
-# Containerising a Node application with MySQL and MongoDB as Backend having a Persistent Storage.
+# Containerising a Node application with MySQL and MongoDB as Backend having a Persistent Storage #
 
 **1. Added a Dockerfile as Follows**
 
 
-```FROM node:dubnium
+```
+FROM node:dubnium
 ENV NODE_OPTIONS --max-old-space-size=2048
 WORKDIR /app
 
