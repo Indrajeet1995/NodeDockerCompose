@@ -1,0 +1,40 @@
+{
+  "database": {
+    "mongo": {
+      "name": "backend_demo",
+      "host": "0.0.0.0",
+      "port": 27017
+    },
+    "mysql" : {
+      "name": "backend_demo",
+      "username": "root",
+      "password": "password",
+      "options": {
+        "host": "0.0.0.0",
+        "port": 3306,
+        "dialect": "mysql",
+        "logging": true,
+        "underscored": true,
+        "timestamps": false,
+        "define": {
+          "underscored": true,
+          "timestamps": false
+        }
+      }
+    }
+  },
+  "publicFolder": "./public",
+  "uploadFolder": "/uploads",
+  "imageFolder": "/images",
+  "MixFolder": "./public/uploads/images",
+  "MixInsideFolder": "./public/uploads/images/",
+  "logging": {
+    "name": "backend-demo",
+    "level": "debug",
+    "path": "/tmp/node_debug.log"
+  },
+  "server" : {
+    "baseURL" : "http://localhost:51005",
+    "port" : 51005
+  }
+}
